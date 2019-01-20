@@ -1,0 +1,107 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+dynamoDb	create.js	/^const dynamoDb = new AWS.DynamoDB.DocumentClient();$/;"	V
+data	create.js	/^  const data = JSON.parse(event.body);$/;"	V
+params	create.js	/^  const params = {$/;"	O
+TableName	create.js	/^    TableName: "notes",$/;"	P
+userId	create.js	/^      userId: event.requestContext.identity.cognitoIdentityId,$/;"	P
+noteId	create.js	/^      noteId: uuid.v1(),$/;"	P
+content	create.js	/^      content: data.content,$/;"	P
+attachment	create.js	/^      attachment: data.attachment,$/;"	P
+createdAt	create.js	/^      createdAt: Date.now()$/;"	P
+headers	create.js	/^    const headers = {$/;"	O
+if	create.js	/^    if (error) {$/;"	M
+response	create.js	/^      const response = {$/;"	O
+statusCode	create.js	/^        statusCode: 500,$/;"	P
+body	create.js	/^        body: JSON.stringify({ status: false })$/;"	P
+response	create.js	/^    const response = {$/;"	O
+statusCode	create.js	/^      statusCode: 200,$/;"	P
+headers	create.js	/^      headers: headers,$/;"	P
+body	create.js	/^      body: JSON.stringify(params.Item)$/;"	P
+slsw	webpack.config.js	/^const slsw = require("serverless-webpack");$/;"	V
+nodeExternals	webpack.config.js	/^const nodeExternals = require("webpack-node-externals");$/;"	V
+entry	webpack.config.js	/^  entry: slsw.lib.entries,$/;"	P
+target	webpack.config.js	/^  target: "node",$/;"	P
+devtool	webpack.config.js	/^  devtool: 'source-map',$/;"	P
+externals	webpack.config.js	/^  externals: [nodeExternals()],$/;"	P
+mode	webpack.config.js	/^  mode: slsw.lib.webpack.isLocal ? "development" : "production",$/;"	P
+minimize	webpack.config.js	/^    minimize: false$/;"	P
+hints	webpack.config.js	/^    hints: false$/;"	P
+rules	webpack.config.js	/^    rules: [$/;"	P
+test	webpack.config.js	/^        test: \/\\.js$\/,$/;"	P
+loader	webpack.config.js	/^        loader: "babel-loader",$/;"	P
+include	webpack.config.js	/^        include: __dirname,$/;"	P
+exclude	webpack.config.js	/^        exclude: \/node_modules\/$/;"	P
+hello	handler.js	/^export const hello = async (event, context) => {$/;"	E
+context	handler.js	/^export const hello = async (event, context) => {$/;"	E
+statusCode	handler.js	/^    statusCode: 200,$/;"	P
+message	handler.js	/^      message: `Go Serverless v1.0! ${(await message({ time: 1, copy: 'Your function executed successfully!'}))}`,$/;"	P
+# Serverless Node.js Starter	README.md	/^# Serverless Node.js Starter$/;"	h
+### Demo	README.md	/^### Demo$/;"	h
+### Requirements	README.md	/^### Requirements$/;"	h
+### Installation	README.md	/^### Installation$/;"	h
+### Usage	README.md	/^### Usage$/;"	h
+### Support	README.md	/^### Support$/;"	h
+### Maintainers	README.md	/^### Maintainers$/;"	h
+value	.webpack/service/create.js	/^  value: true$/;"	P
+_stringify	.webpack/service/create.js	/^var _stringify = __webpack_require__(\/*! babel-runtime\/core-js\/json\/stringify *\/ "babel-runtime\/core-js\/json\/stringify");$/;"	V
+_stringify2	.webpack/service/create.js	/^var _stringify2 = _interopRequireDefault(_stringify);$/;"	V
+_uuid	.webpack/service/create.js	/^var _uuid = __webpack_require__(\/*! uuid *\/ "uuid");$/;"	V
+_uuid2	.webpack/service/create.js	/^var _uuid2 = _interopRequireDefault(_uuid);$/;"	V
+_awsSdk	.webpack/service/create.js	/^var _awsSdk = __webpack_require__(\/*! aws-sdk *\/ "aws-sdk");$/;"	V
+_awsSdk2	.webpack/service/create.js	/^var _awsSdk2 = _interopRequireDefault(_awsSdk);$/;"	V
+_interopRequireDefault	.webpack/service/create.js	/^function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }$/;"	F
+dynamoDb	.webpack/service/create.js	/^var dynamoDb = new _awsSdk2.default.DynamoDB.DocumentClient();$/;"	V
+main	.webpack/service/create.js	/^function main(event, context, callback) {$/;"	F
+data	.webpack/service/create.js	/^  var data = JSON.parse(event.body);$/;"	V
+params	.webpack/service/create.js	/^  var params = {$/;"	O
+TableName	.webpack/service/create.js	/^    TableName: "notes",$/;"	P
+userId	.webpack/service/create.js	/^      userId: event.requestContext.identity.cognitoIdentityId,$/;"	P
+noteId	.webpack/service/create.js	/^      noteId: _uuid2.default.v1(),$/;"	P
+content	.webpack/service/create.js	/^      content: data.content,$/;"	P
+attachment	.webpack/service/create.js	/^      attachment: data.attachment,$/;"	P
+createdAt	.webpack/service/create.js	/^      createdAt: Date.now()$/;"	P
+headers	.webpack/service/create.js	/^    var headers = {$/;"	O
+if	.webpack/service/create.js	/^    if (error) {$/;"	M
+_response	.webpack/service/create.js	/^      var _response = {$/;"	O
+statusCode	.webpack/service/create.js	/^        statusCode: 500,$/;"	P
+headers	.webpack/service/create.js	/^        headers: headers,$/;"	P
+body	.webpack/service/create.js	/^        body: (0, _stringify2.default)({ status: false })$/;"	P
+response	.webpack/service/create.js	/^    var response = {$/;"	O
+statusCode	.webpack/service/create.js	/^      statusCode: 200,$/;"	P
+headers	.webpack/service/create.js	/^      headers: headers,$/;"	P
+body	.webpack/service/create.js	/^      body: (0, _stringify2.default)(params.Item)$/;"	P
+buildResponse	libs/response-lib.js	/^function buildResponse(statusCode, body) {$/;"	F
+body	libs/response-lib.js	/^    body: JSON.stringify(body)$/;"	P
+dynamoDb	libs/dynamodb-lib.js	/^  const dynamoDb = new AWS.DynamoDB.DocumentClient();$/;"	V
+dynamoDbLib	get.js	/^import * as dynamoDbLib from ".\/libs\/dynamodb-lib";$/;"	I
+params	get.js	/^  const params = {$/;"	O
+TableName	get.js	/^    TableName: "notes",$/;"	P
+userId	get.js	/^      userId: event.requestContext.identity.cognitoIdentityId,$/;"	P
+noteId	get.js	/^      noteId: event.pathParameters.id$/;"	P
+result	get.js	/^    const result = await dynamoDbLib.call("get", params);$/;"	V
+if	get.js	/^    if (result.Item) {$/;"	M
+dynamoDbLib	list.js	/^import * as dynamoDbLib from ".\/libs\/dynamodb-lib";$/;"	I
+params	list.js	/^  const params = {$/;"	O
+TableName	list.js	/^    TableName: "notes",$/;"	P
+KeyConditionExpression	list.js	/^    KeyConditionExpression: "userId = :userId",$/;"	P
+result	list.js	/^    const result = await dynamoDbLib.call("query", params);$/;"	V
+dynamoDbLib	update.js	/^import * as dynamoDbLib from ".\/libs\/dynamodb-lib";$/;"	I
+data	update.js	/^  const data = JSON.parse(event.body);$/;"	V
+params	update.js	/^  const params = {$/;"	O
+TableName	update.js	/^    TableName: "notes",$/;"	P
+userId	update.js	/^      userId: event.requestContext.identity.cognitoIdentityId,$/;"	P
+noteId	update.js	/^      noteId: event.pathParameters.id$/;"	P
+UpdateExpression	update.js	/^    UpdateExpression: "SET content = :content, attachment = :attachment",$/;"	P
+ReturnValues	update.js	/^    ReturnValues: "ALL_NEW"$/;"	P
+result	update.js	/^    const result = await dynamoDbLib.call("update", params);$/;"	V
+dynamoDbLib	delete.js	/^import * as dynamoDbLib from ".\/libs\/dynamodb-lib";$/;"	I
+params	delete.js	/^  const params = {$/;"	O
+TableName	delete.js	/^    TableName: "notes",$/;"	P
+userId	delete.js	/^      userId: event.requestContext.identity.cognitoIdentityId,$/;"	P
+noteId	delete.js	/^      noteId: event.pathParameters.id$/;"	P
+result	delete.js	/^    const result = await dynamoDbLib.call("delete", params);$/;"	V
